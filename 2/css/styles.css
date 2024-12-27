@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.container__button {
+  background-image: url("https://gspics.org/images/2024/12/22/ILOqOD.png");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: background-position 0.3s ease;
+  position: relative;
+}
+
+.container__button:hover {
+  background-position: calc(50% - 25px) center;
+}
+
+.container__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
